@@ -1,8 +1,5 @@
-def register_routes(app):
-    """Register all route blueprints with the Flask app.
+from flask import jsonify
 
-    Add your blueprints here. Example:
-        from app.routes.products import products_bp
-        app.register_blueprint(products_bp)
-    """
+def register_routes(app):
     pass
+  

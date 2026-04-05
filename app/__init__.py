@@ -13,11 +13,11 @@ def create_app():
     init_db(app)
 
     from app import models  # noqa: F401 - registers models with Peewee
-
-    register_routes(app)
-
+    
     @app.route("/health")
     def health():
         return jsonify(status="ok")
+    
+    register_routes(app)
 
     return app
